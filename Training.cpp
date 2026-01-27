@@ -13,17 +13,15 @@ int main(){
     cout << "Enter C:";
     cin >> c;
 
-    if(a==b==c){
+    if(a==b && b==c && a==c){
         cout << "This is an Equilatoral Triangle!";
-
-    else if (a==b) || (b==c) || (a==c){ 
+    }
+    else if (a==b || b==c || a==c){ 
         cout << "This is an Isoceles Triangle!";
     }
     else{
         cout << "This a Scalne Triangle!";
     }
 
-
-    }
-
+    return 0;
 }
