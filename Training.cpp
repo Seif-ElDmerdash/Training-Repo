@@ -34,14 +34,13 @@ int main(){
     using std::cout; using std::cin; 
 
     int w;
-    cout << "Enter a number from 1 - 100: ";
     cin >> w;
-    if(w%2 == 0){
-        cout << "YES";
-    }
-    else{
-        cout << "NO";
-    }
-
+    if(1<=w<=100)
+        {if(w%2 == 0 && w!=2){
+            cout << "YES";
+        }
+        else{
+            cout << "NO";
+        }}
     return 0;
 }
