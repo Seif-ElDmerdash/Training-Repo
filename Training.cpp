@@ -107,35 +107,52 @@
 // }
 
 
+// #include <iostream>
+
+// int main(){
+//     using namespace std;
+
+//     char unit ; double temp;
+    
+//     cout << "F = Fahrenheit" << "\n";
+//     cout << "C = Celsius" << "\n";
+//     cout << "Enter what unit you want to convert to" << "\n";
+//     cin >> unit;
+
+//     if(unit == 'F'|| unit == 'f'){
+
+//         cout << "Enter the temprature in Celsius: " << "\n";
+//         cin >> temp;
+//         temp = (1.8*temp) + 32;
+//         cout << "Temprature in Fahrenheit = " << temp << "\n";
+//     }
+//     else if(unit == 'C'|| unit == 'c'){
+
+//         cout << "Enter the temprature in Fahrenheit: " << "\n";
+//         cin >> temp;
+//         temp = (temp - 32) / 1.8;
+//         cout << "Temprature in Celsius = " << temp << "\n";
+//     }
+//     else{
+//         cout << "Enter F or C only.";
+//     }
+
+//     return 0;
+// }
+
+
 #include <iostream>
 
 int main(){
     using namespace std;
 
-    char unit ; double temp;
-    
-    cout << "F = Fahrenheit" << "\n";
-    cout << "C = Celsius" << "\n";
-    cout << "Enter what unit you want to convert to" << "\n";
-    cin >> unit;
-
-    if(unit == 'F'|| unit == 'f'){
-
-        cout << "Enter the temprature in Celsius: " << "\n";
-        cin >> temp;
-        temp = (1.8*temp) + 32;
-        cout << "Temprature in Fahrenheit = " << temp << "\n";
-    }
-    else if(unit == 'C'|| unit == 'c'){
-
-        cout << "Enter the temprature in Fahrenheit: " << "\n";
-        cin >> temp;
-        temp = (temp - 32) / 1.8;
-        cout << "Temprature in Celsius = " << temp << "\n";
-    }
-    else{
-        cout << "Enter F or C only.";
+    string name;
+    while(name.empty()){
+        cout << "Enter your name: ";
+        getline(cin,name);
     }
 
+    cout << "Hello " << name;
     return 0;
+
 }
