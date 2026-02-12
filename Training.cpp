@@ -141,18 +141,101 @@
 // }
 
 
+// #include <iostream>
+
+// int main(){
+//     using namespace std;
+
+//     string name;
+//     while(name.empty()){
+//         cout << "Enter your name: ";
+//         getline(cin,name);
+//     }
+
+//     cout << "Hello " << name;
+//     return 0;
+
+// }
+
+// #include <iostream>
+
+// int main(){
+//     using std::cout,std::cin;
+    
+//     int number;
+
+//     do{
+//         cout << "Enter a positive number: " , cin >> number;
+//     }while(number < 0);
+
+//     cout << "The number is " << number;
+
+//     return 0;
+// }
+
+// #include <iostream>
+
+// int main(){
+//     using std::cout,std::cin;
+
+//     for(int i = 1 ; i <=3; i++){
+
+//         cout<<"Ramdan Kareem ya wlad el nas!!\n";
+//     }
+//  return 0;
+// }
+
+// #include <iostream>
+// int main(){
+//     using std::cout ,std::cin;
+
+//     for(int i=1; i<= 20; i++){
+//         if(i==13){
+//             continue;
+//         }
+//         cout<<i<<"\n";
+//     }
+
+//     return 0;
+// }
+
+
+// #include <iostream>
+// int main(){
+//     using std::cout ,std::cin;
+//     int rows ,columns; char symbol;
+
+//     cout << "Enter number of rows: " , cin >> rows;
+//     cout << "Enter number of columns: " , cin >> columns;
+//     cout << "Enter the symbol: " , cin >> symbol;
+
+//     for(int i=1; i<=rows;i++){
+//         for (int j=1; j<=i; j++){
+//             cout << symbol;
+//         }
+//         cout <<"\n";
+//     }
+
+// }
+
+
 #include <iostream>
-
 int main(){
-    using namespace std;
+    using std::cout ,std::cin;
+    int rows; char symbol;
 
-    string name;
-    while(name.empty()){
-        cout << "Enter your name: ";
-        getline(cin,name);
+    cout << "Enter number of rows: " , cin >> rows;
+    cout << "Enter the symbol: " , cin >> symbol;
+
+    for(int i=1; i<=rows;i++){
+        for(int s=rows; s>i; s--){
+            cout <<" ";
+        }
+        for (int j=1; j<=i; j++){
+            cout << symbol << " ";
+        }
+        cout <<"\n";
     }
-
-    cout << "Hello " << name;
+    
     return 0;
-
 }
