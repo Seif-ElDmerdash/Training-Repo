@@ -219,23 +219,47 @@
 // }
 
 
-#include <iostream>
-int main(){
-    using std::cout ,std::cin;
-    int rows; char symbol;
+// #include <iostream>
+// int main(){
+//     using std::cout ,std::cin;
+//     int rows; char symbol;
 
-    cout << "Enter number of rows: " , cin >> rows;
-    cout << "Enter the symbol: " , cin >> symbol;
+//     cout << "Enter number of rows: " , cin >> rows;
+//     cout << "Enter the symbol: " , cin >> symbol;
 
-    for(int i=1; i<=rows;i++){
-        for(int s=rows; s>i; s--){
-            cout <<" ";
-        }
-        for (int j=1; j<=i; j++){
-            cout << symbol << " ";
-        }
-        cout <<"\n";
-    }
+//     for(int i=1; i<=rows;i++){
+//         for(int s=rows; s>i; s--){
+//             cout <<" ";
+//         }
+//         for (int j=1; j<=i; j++){
+//             cout << symbol << " ";
+//         }
+//         cout <<"\n";
+//     }
     
-    return 0;
-}
+//     return 0;
+// }
+
+
+// #include <iostream>
+
+// int main(){
+//     using namespace std;
+    
+//     int n ; string word;
+//     cin >> n;
+
+//     for(int i = 0; i<n ; i++ ){
+        
+//     cout << "Enter a word: ", cin >> word;
+
+//     if(word.length()>10){  
+//         cout<< word[0] << word.length()-2 << word[word.length()-1] << "\n";
+//     }
+//     else{
+//         cout << word << "\n";
+//     }
+//     }
+    
+//     return 0;
+// }
