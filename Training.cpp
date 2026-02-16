@@ -263,3 +263,73 @@
     
 //     return 0;
 // }
+
+// #include <iostream>
+
+// int main(){
+
+//     srand(time(NULL));
+
+//     int num1 = (rand() % 6) + 1;
+//     int num2 = (rand() % 6) + 1;
+//     int num3 = (rand() % 6) + 1;
+
+
+//     std::cout << num1 << '\n' << num2 << '\n' << num3;
+    
+// }
+
+
+
+// #include <iostream>
+// #include <ctime>
+
+// int main(){
+
+//     srand(time(0));
+
+//     int randnum = rand() % 5 + 1;
+
+//     switch(randnum){
+//         case 1 : std::cout << "You have won a T-shirt";
+//                 break;
+//         case 2 : std::cout << "You have won a T-shirT";
+//                 break;
+//         case 3 : std::cout << "You have won a T-shirTTT";
+//                 break;
+//         case 4 : std::cout << "You have won a T-shirTTTT";
+//                 break;
+//         case 5 : std::cout << "You have won a T-shirTTTTT";
+//                 break;
+//     }
+// }
+
+
+// #include <iostream>
+
+// int main(){
+//     using namespace std;
+
+//     srand(time(NULL));
+
+//     int num = (rand() % 100) +1; 
+//     int guess;
+//     int tries = 0;
+
+//     do{
+//         cout << "Enter a number between 1-100\n";
+//         cin>> guess;
+//         tries++ ;
+//         if(guess > num){
+//             cout << "Too high!\n";
+//         }
+//         else if(guess < num){
+//             cout << "Too low!\n";
+//         }
+//         else{
+//             cout << "Congrats # tries: " << tries;
+//         }  
+
+//     }while(guess != num);
+
+// }
